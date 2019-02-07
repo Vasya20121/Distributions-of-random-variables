@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 library(ggfortify)
 ui <- fluidPage(
-  titlePanel("Distributions  "),
+  titlePanel("Distributions of random variables  "),
   withMathJax(),
     sidebarLayout(
       sidebarPanel(
@@ -11,7 +11,7 @@ ui <- fluidPage(
         uiOutput("beta"),
         uiOutput("hypergeom"),
         selectInput(inputId = "distributions",
-          label = strong("Distributions"),
+          label = strong("Distributions of random variables"),
           choices = c("Normal","Binomial", "Beta",
                       "Hypergeometric"),
           selected = "Normal"),
